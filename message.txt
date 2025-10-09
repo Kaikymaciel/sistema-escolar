@@ -1,0 +1,103 @@
+Aqui estão as dependências necessárias para usar o sistema de boletim escolar:
+
+Dependências Principais:
+1. Flask - Framework web
+bash
+pip install flask
+2. fpdf2 - Geração de PDFs
+bash
+pip install fpdf2
+Lista COMPLETA de Dependências:
+bash
+# Instalação completa de uma vez
+pip install flask fpdf2
+Arquivo requirements.txt (Recomendado):
+Crie um arquivo requirements.txt na pasta do projeto:
+
+txt
+Flask==3.0.0
+fpdf2==2.7.4
+Para instalar todas as dependências de uma vez:
+
+bash
+pip install -r requirements.txt
+Dependências que já vêm com o Python (não precisa instalar):
+sqlite3 - Banco de dados
+
+os - Sistema operacional
+
+io - Input/Output
+
+datetime - Datas e horas
+
+random - Geração de números aleatórios
+
+Versões Testadas:
+Python 3.8+
+
+Flask 2.3+ ou 3.0+
+
+fpdf2 2.7+
+
+Instruções Completas de Instalação:
+Para quem for usar o projeto:
+Baixe o código para uma pasta
+
+Abra o terminal/prompt na pasta do projeto
+
+Instale as dependências:
+
+bash
+pip install flask fpdf2
+Popule o banco de dados:
+
+bash
+python init_data.py
+Execute o sistema:
+
+bash
+python main.py
+Acesse no navegador:
+
+text
+http://localhost:5000
+Estrutura de Arquivos Necessária:
+text
+sistema_boletim/
+├── main.py
+├── database.py
+├── pdf_generator.py
+├── init_data.py
+├── requirements.txt          ← Opcional, mas recomendado
+├── templates/
+│   ├── index.html
+│   └── aluno.html
+└── static/                   ← Opcional (para CSS personalizado)
+    └── style.css
+Comando de Instalação Rápida:
+bash
+# Para Windows/Linux/Mac
+pip install flask fpdf2 && python init_data.py && python main.py
+Possíveis Conflitos/Problemas:
+Se tiver conflito com PyFPDF (versão antiga):
+bash
+pip uninstall PyFPDF
+pip install --upgrade fpdf2
+Se o Python não estiver no PATH:
+bash
+# No Windows, use python ou py
+py -m pip install flask fpdf2
+py init_data.py
+py main.py
+Se estiver no Linux/Mac e precisar de sudo:
+bash
+sudo pip install flask fpdf2
+python3 init_data.py
+python3 main.py
+Resumo das Dependências:
+Biblioteca	Versão	Finalidade
+Flask	3.0.0+	Servidor web e rotas
+fpdf2	2.7.4+	Geração de PDFs
+Total: Apenas 2 bibliotecas externas! 🎉
+
+O sistema é muito leve e não depende de bancos de dados complexos ou frameworks pesados.
